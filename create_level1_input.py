@@ -28,7 +28,7 @@ for post_id, grouped_post in grouped_posts:
 
     csv_rows.append([f"{post_id}_full", full_post])
 
-with open(OUTPUT_FILENAME, mode="w", encoding="utf-8-sig") as csv_file:
+with open(OUTPUT_FILENAME, mode="w", newline='', encoding="utf-8-sig") as csv_file:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(["key", "input1"])
     csv_writer.writerows(csv_rows)

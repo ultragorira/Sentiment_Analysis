@@ -9,6 +9,7 @@ input_json_filename = r'C:\Scripts\Sentiment_Analysis\sample_data_final.json'
 entries_by_key = defaultdict(list)
 updated_list = []
 full_conv_results = []
+full_dict = {}
 
 with open(input_csv_filename, encoding='utf-8') as csv_file:
     for row in csv.DictReader(csv_file):
@@ -23,7 +24,7 @@ for entry in entries_by_key:
 idx = 0
 idx_full = 0
 
-with open(input_json_filename, 'r+', encoding='utf-8') as json_out_file:
+with open(input_json_filename, 'r', encoding='utf-8') as json_out_file:
     full_json = json.load(json_out_file)['sample_data']
     for f in full_json:
         selected_row = (f['post_number'])
@@ -35,7 +36,10 @@ with open(input_json_filename, 'r+', encoding='utf-8') as json_out_file:
             full_json[idx].update({'sentiment': updated_list[idx][1]})
             idx +=1
 
-j = json.dumps(full_json, indent=4, ensure_ascii=False).encode('utf8')
+full_dict['sample_data'] = full_json
+
+
+j = json.dumps(full_dict, ensure_ascii=False, indent=4).encode('utf8')
 with open(input_json_filename, 'wb') as f:      
     f.write(j)
 

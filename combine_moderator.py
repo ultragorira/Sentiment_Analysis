@@ -4,7 +4,7 @@ import sys
 from collections import defaultdict
 
 HEADERS = ["key", "input1", "input2", "input3"]
-OUTPUT_FILENAME = "new_input.csv"
+OUTPUT_FILENAME = "moderatorProject_input.csv"
 
 _script_name, input_filename = sys.argv
 

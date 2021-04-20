@@ -16,6 +16,7 @@ with open(input_csv_filename, encoding='utf-8') as csv_file:
 
 for entry in entries_by_key:
     if (entries_by_key[entry][-1]['output1'] != '' and entries_by_key[entry][-1]['status'] == 'done'):
+        #Taking -1 as it is the last item within the group
         updated_list.append([entries_by_key[entry][-1]['key'], [entries_by_key[entry][-1]['input1'],entries_by_key[entry][-1]['input2'],entries_by_key[entry][-1]['output1']]])
 
 

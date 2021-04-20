@@ -26,7 +26,9 @@ with open(input_json_filename, 'r', encoding='utf-8') as json_out_file:
         if (full_json[f]['post_number']=='1'):
             for result in updated_list:
                 if (temp_key == result[0]):
+                    #Get temp key and combine with full, e.g. 201_1 to become 201_full
                     element_to_find = temp_key.split('_')[0]+'_full'
+                    #Get array back to list False and True where found the element_to_find
                     overall_sentiment = [element_to_find in sub_list for sub_list in updated_list]
                     if (True in overall_sentiment):
                         full_json[f].update({'sentiment': result[1], 'overall_sentiment': updated_list[overall_sentiment.index(True)][1]})

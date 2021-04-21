@@ -5,7 +5,7 @@ from collections import defaultdict
 
 #_script_name, input_json_filename, input_csv_filename = sys.argv
 input_csv_filename = r'C:\Scripts\Sentiment_Analysis\Moderator.csv'
-input_json_filename = r'C:\Scripts\Sentiment_Analysis\sample_data_final.json'
+input_json_filename = r'C:\Scripts\Sentiment_Analysis\sample_data.json'
 entries_by_key = defaultdict(list)
 updated_list = []
 full_dict = {}

@@ -8,8 +8,8 @@ from itertools import groupby
 OUTPUT_FILENAME = "import.csv"
 MAIN_KEY = "sample_data"
 
-_script_name, input_filename = sys.argv
-#input_filename = r'C:\Scripts\Sentiment_Analysis\LionBridge.json'
+#_script_name, input_filename = sys.argv
+input_filename = r'C:\Scripts\Sentiment_Analysis\LionBridge.json'
 print(f"Reading from '{input_filename}")
 
 with open(input_filename, encoding='utf-8') as f:

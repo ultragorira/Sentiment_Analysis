@@ -1,11 +1,12 @@
 import csv
-import json
+#import json
+import ndjson
 import sys
 from collections import defaultdict
 
 #_script_name, input_json_filename, input_csv_filename = sys.argv
 input_csv_filename = r'C:\Scripts\Sentiment_Analysis\Moderator.csv'
-input_json_filename = r'C:\Scripts\Sentiment_Analysis\sample_data.json'
+input_json_filename = r'C:\Scripts\Sentiment_Analysis\LionBridge.json'
 entries_by_key = defaultdict(list)
 updated_list = []
 full_dict = {}
@@ -21,10 +22,10 @@ for entry in entries_by_key:
 
 
 with open(input_json_filename, 'r', encoding='utf-8') as json_out_file:
-    full_json = json.load(json_out_file)['sample_data']
+    full_json = ndjson.load(json_out_file)#['sample_data']
     for f in range(len(full_json)):
-        temp_key = full_json[f]['post_id']+'_'+full_json[f]['post_number']
-        if (full_json[f]['post_number']=='1'):
+        temp_key = full_json[f]['topic_id']+'_'+full_json[f]['order_within_topic']
+        if (full_json[f]['order_within_topic']=='1'):
             for result in updated_list:
                 if (temp_key == result[0]):
                     #Get temp key and combine with full, e.g. 201_1 to become 201_full
@@ -41,10 +42,10 @@ with open(input_json_filename, 'r', encoding='utf-8') as json_out_file:
                     full_json[f].update({'sentiment': result[1]})
 
 
-full_dict['sample_data'] = full_json
+#full_dict['sample_data'] = full_json
 
 
-j = json.dumps(full_dict, ensure_ascii=False, indent=4).encode('utf8')
+j = ndjson.dumps(full_json).encode('utf8')
 with open(input_json_filename, 'wb') as f:      
     f.write(j)
 

@@ -7,7 +7,7 @@ from itertools import groupby
 
 #_script_name, input_json_filename, input_csv_filename = sys.argv
 input_csv_filename = r'C:\Scripts\Sentiment_Analysis\Moderator.csv'
-input_json_filename = r'C:\Scripts\Sentiment_Analysis\Testjson.json'
+input_json_filename = r'C:\Scripts\Sentiment_Analysis\LionBridge.json'
 entries_by_key = defaultdict(list)
 updated_list = []
 

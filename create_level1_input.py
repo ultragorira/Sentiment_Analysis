@@ -31,11 +31,11 @@ for post_id, grouped_post in grouped_posts:
     full_post = ""
 
     for post in grouped_post:
-        full_post += f"text_id: {post['text_id']}\n{post['raw_text']}\n\n"
+        #full_post += f"text_id: {post['text_id']}\n{post['raw_text']}\n\n"
         csv_rows.append(
             [f"{post_id}_{post['order_within_topic']}", post['raw_text']])
 
-    csv_rows.append([f"{post_id}_full", full_post])
+    #csv_rows.append([f"{post_id}_full", full_post])
 
 with open(OUTPUT_FILENAME, mode="w", newline='', encoding="utf-8-sig") as csv_file:
     csv_writer = csv.writer(csv_file)

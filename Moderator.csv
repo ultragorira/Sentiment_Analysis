@@ -1,0 +1,73 @@
+id,follows_id,key,contributor,status,ctime,mtime,pickup_time,submit_time,input1,input2,input3,output1,tags
+607d60d96733be3f881b58e4,,201_1,5f44ef1b68b94407b13f63bb,done,2021-04-19T10:52:09.330000+00:00,2021-04-19T12:19:46.273000+00:00,2021-04-19T10:52:18.285000+00:00,2021-04-19T10:52:34.813000+00:00,POS,NEU,"This is great XXXX! Thanks for sharing. Have you found a way to automate the data entry from the Amazon reports into your individualized driver scorecard? As well, what time period are you using for attendance metrics?",MIX,
+607d60d96733be3f881b58e4,,201_2,5f44ef1b68b94407b13f63bb,done,2021-04-19T10:52:09.330000+00:00,2021-04-19T12:19:46.273000+00:00,2021-04-19T10:52:18.285000+00:00,2021-04-19T10:52:34.813000+00:00,POS,NEU,"This is great XXXX! Thanks for sharing. Have you found a way to automate the data entry from the Amazon reports into your individualized driver scorecard? As well, what time period are you using for attendance metrics?",POS,
+607d7569e8e2f692b8c7c6d8,607d60d96733be3f881b58e4,201_2,5ef5b793d7833e87bb3014b3,done,2021-04-19T12:19:37.754000+00:00,2021-04-19T12:19:53.298000+00:00,2021-04-19T12:19:46.258000+00:00,2021-04-19T12:19:53.298000+00:00,POS,NEU,"This is great XXXX! Thanks for sharing. Have you found a way to automate the data entry from the Amazon reports into your individualized driver scorecard? As well, what time period are you using for attendance metrics?",NEU,revision_amended
+607d60d96733be3f881b58e5,,201_3,5f44ef1b68b94407b13f63bb,done,2021-04-19T10:52:09.330000+00:00,2021-04-19T10:52:42.901000+00:00,2021-04-19T10:52:34.853000+00:00,2021-04-19T10:52:42.901000+00:00,NEG,POS,"Hi XXXXX- I  have not figured out a way to automate the initial entry yet.  We're pulling hours out of ADP, FICO scores out of Mentor and then metrics off the portal so it's a bit time consuming. We mirror the Amazon weeks so Sunday- Saturday.  We email schedules out the week before on Wednesdays so each Driver has their schedule along with their metrics for the prior week.",NEG,
+607d60d96733be3f881b58e6,,201_4,5f44ef1b68b94407b13f63bb,pending,2021-04-19T10:52:09.330000+00:00,2021-04-19T10:57:38.167000+00:00,2021-04-19T10:52:42.936000+00:00,2021-04-19T10:54:02.702000+00:00,NEU,NEG,XXXXX we do something like this with teams.  There's away to export the scorecard data to an excel and use lookup tables to assign that data to your drivers.  It would probably save you a ton of time.  I'd be happy to set up a call and show you.  Let me know!,,
+607d60d96733be3f881b58e7,,201_5,5f44ef1b68b94407b13f63bb,done,2021-04-19T10:52:09.330000+00:00,2021-04-19T11:26:27.173000+00:00,2021-04-19T10:54:02.741000+00:00,2021-04-19T11:26:27.173000+00:00,NEG,POS,"@XXXXXXXX Hey XXXXXXX, would love to learn this from you! Let me know what time might work for you in the coming week?",NEG,
+607d60d96733be3f881b58e8,,201_6,5f44ef1b68b94407b13f63bb,done,2021-04-19T10:52:09.330000+00:00,2021-04-19T11:26:29.183000+00:00,2021-04-19T11:26:27.212000+00:00,2021-04-19T11:26:29.183000+00:00,POS,NEG,@XXXXXXXX i would like to know more about how you export this in excel.,NEG,
+607d60d96733be3f881b58e9,,201_7,5f44ef1b68b94407b13f63bb,pending,2021-04-19T10:52:09.330000+00:00,2021-04-19T11:26:33.114000+00:00,2021-04-19T11:26:29.226000+00:00,2021-04-19T11:26:33.114000+00:00,POS,POS,@XXXXXXXX So cool - how do you export scorecard info to excel?!,,
+607d60d96733be3f881b58ea,,201_8,5f44ef1b68b94407b13f63bb,pending,2021-04-19T10:52:09.330000+00:00,2021-04-19T11:26:36.628000+00:00,2021-04-19T11:26:33.153000+00:00,2021-04-19T11:26:36.628000+00:00,POS,NEU,"Hi,
+Newbie here in San Diego.
+Can you tell me where to find the reports for this?
+Thanks,
+XXXXXX
+XXXX DSD3",,
+607d60d96733be3f881b58eb,,201_full,5f44ef1b68b94407b13f63bb,done,2021-04-19T10:52:09.330000+00:00,2021-04-19T11:26:46.860000+00:00,2021-04-19T11:26:36.668000+00:00,2021-04-19T11:26:46.860000+00:00,POS,NEG,"response_id: 347
+XXXX XXXXXX, owner of St. XXXXX XXXXX in Florida, shares a Quick Tip of converting the SLS Scorecard into individualized reports for all of her drivers. Check out the example scorecard below to see how you might apply this to your business.
+
+WATCH:
+https://d2war8rj8bm5io.cloudfront.net/original/1X/500ce81681d904f4e212f7b3570bbb064931005e.mp4 
+LISTEN:
+https://d2war8rj8bm5io.cloudfront.net/original/1X/a7dbef236bdd59b06e0c19bd903345de63d4de7d.m4a 
+EXAMPLE:
+![Scorecard%20Example|714x500](upload://fYA4HbrlOK8DdL1svKPSSea2Hg3.png) 
+
+Tag your ""performance"" tools, tips and tricks in the Driver Engagement Topic section to see what ideas other owners may have to share with you!
+
+response_id: 531
+This is great XXXX! Thanks for sharing. Have you found a way to automate the data entry from the Amazon reports into your individualized driver scorecard? As well, what time period are you using for attendance metrics?
+
+response_id: 597
+Hi XXXXX- I  have not figured out a way to automate the initial entry yet.  We're pulling hours out of ADP, FICO scores out of Mentor and then metrics off the portal so it's a bit time consuming. We mirror the Amazon weeks so Sunday- Saturday.  We email schedules out the week before on Wednesdays so each Driver has their schedule along with their metrics for the prior week.
+
+response_id: 3318
+XXXXX we do something like this with teams.  There's away to export the scorecard data to an excel and use lookup tables to assign that data to your drivers.  It would probably save you a ton of time.  I'd be happy to set up a call and show you.  Let me know!
+
+response_id: 10114
+@XXXXXXXX Hey XXXXXXX, would love to learn this from you! Let me know what time might work for you in the coming week?
+
+response_id: 12591
+@XXXXXXXX i would like to know more about how you export this in excel.
+
+response_id: 16097
+@XXXXXXXX So cool - how do you export scorecard info to excel?!
+
+response_id: 17351
+Hi,
+Newbie here in San Diego.
+Can you tell me where to find the reports for this?
+Thanks,
+XXXXXX
+XXXX DSD3",POS,
+607d60d96733be3f881b58ec,,202_1,5f44ef1b68b94407b13f63bb,done,2021-04-19T10:52:09.330000+00:00,2021-04-19T11:26:50.781000+00:00,2021-04-19T11:26:46.899000+00:00,2021-04-19T11:26:50.781000+00:00,POS,POS,"XXXXX XXXXXX, owner of XXXXXXX out of DCS1, shares why he focuses on commitment, accountability and respect as part of his recruitment efforts to develop the culture he wants to foster across his team. 
+
+WATCH:
+https://assets-ignitestg-agc-prod-us.s3.dualstack.us-west-2.amazonaws.com/original/1X/44cbec1935f4a3c93de3533c2b85bd275490b174.mp4 
+LISTEN:
+https://d2war8rj8bm5io.cloudfront.net/original/1X/a898b1a780a039c1c4988f1643f172bc9d2675da.m4a 
+
+Use the tag ""recruiting"" to share your tips on what you suggest looking for as you recruit.
+
+![14%20AM|724x480](upload://bESmkamNqYI2YHvAsuYFKugYfFu.png)",POS,
+607d60d96733be3f881b58ed,,202_full,5f44ef1b68b94407b13f63bb,pending,2021-04-19T10:52:09.330000+00:00,2021-04-19T11:26:53.094000+00:00,2021-04-19T11:26:50.821000+00:00,2021-04-19T11:26:53.094000+00:00,POS,NEU,"response_id: 348
+XXXXX XXXXXX, owner of XXXXXXX out of DCS1, shares why he focuses on commitment, accountability and respect as part of his recruitment efforts to develop the culture he wants to foster across his team. 
+
+WATCH:
+https://assets-ignitestg-agc-prod-us.s3.dualstack.us-west-2.amazonaws.com/original/1X/44cbec1935f4a3c93de3533c2b85bd275490b174.mp4 
+LISTEN:
+https://d2war8rj8bm5io.cloudfront.net/original/1X/a898b1a780a039c1c4988f1643f172bc9d2675da.m4a 
+
+Use the tag ""recruiting"" to share your tips on what you suggest looking for as you recruit.
+
+![14%20AM|724x480](upload://bESmkamNqYI2YHvAsuYFKugYfFu.png)",,

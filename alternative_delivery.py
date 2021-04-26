@@ -63,7 +63,7 @@ with open(input_json_filename, 'r', encoding='utf-8') as json_out_file:
 
 
 j = ndjson.dumps(full_json).encode('utf-8')
-with open(input_json_filename, 'wb') as f:      
+with open('LionBridge_SentimentAnalysis_Final_Delivery.json', 'wb') as f:      
     f.write(j)
 
 

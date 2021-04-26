@@ -6,7 +6,7 @@ from itertools import groupby
 import ndjson
 
 
-OUTPUT_FILENAME = "import.json"
+OUTPUT_FILENAME = "LionBridge_SentimentAnalysis_Final_Delivery.json"
 
 topic_first_posts = {}
 

@@ -53,7 +53,7 @@ def item_results(item):
 
 
 def save_result(delivery_items):
-    with open(OUTPUT_FILENAME, mode="w", newline="", encoding="utf-8-sig") as output_file:
+    with open(OUTPUT_FILENAME, mode="w", newline="", encoding="utf-8") as output_file:
         ndjson.dump(delivery_items, output_file)
 
 

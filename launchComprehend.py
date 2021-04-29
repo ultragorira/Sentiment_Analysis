@@ -1,5 +1,12 @@
+import csv
 from csv import DictReader
 import boto3
+import sys
+
+_script_name, input_file = sys.argv
+
+HEADERS = ["key", "Sentiment", "Positive", "Negative", "Neutral", "Mixed"]
+OUTPUT_FILENAME = "ComprehendResults.csv"
 
 #Using boto3 to call the Comprehend API
 client = boto3.client('comprehend')
@@ -7,11 +14,12 @@ client = boto3.client('comprehend')
 def checkSentiment(text):
 
     #Sentiment Analysis
-    sentiment = client.detect_sentiment(Text = text, LanguageCode = 'en') #API call for sentiment analysis
+    sentiment = client.detect_sentiment(Text = text[1], LanguageCode = 'en') #API call for sentiment analysis
     sentRes = sentiment['Sentiment'] #Positive, Neutral, or Negative
     sentScore = sentiment['SentimentScore'] #Percentage of Positive, Neutral, and Negative
-    print(sentRes)
-    print(sentScore)
+    #print(sentRes)
+    #print(sentScore)
+    return([text[0], sentRes[0:3], sentScore['Positive'], sentScore['Negative'], sentScore['Neutral'], sentScore['Mixed']])
     
 def checkEntities(text):
 
@@ -24,12 +32,17 @@ def checkEntities(text):
     print(textEntities)
     print(typeEntities)
 
-input_file = 'ComprehendInput.csv'
+comprehend_results = []
 
 with open(input_file, 'r', encoding="utf-8") as f:
     csv_reader = DictReader(f)
     for row in csv_reader:
-        checkSentiment(row['input3'])
+        comprehend_results.append(checkSentiment([row['key'], row['input3']]))
 
-#checkSentiment()
-#checkEntities()
+#print(comprehend_results)
+with open(OUTPUT_FILENAME, mode="w", newline='', encoding="utf-8") as csv_file:
+    csv_writer = csv.writer(csv_file)
+    csv_writer.writerow(HEADERS)
+    csv_writer.writerows(comprehend_results)
+
+print(f"Done! See the new file '{OUTPUT_FILENAME}'")

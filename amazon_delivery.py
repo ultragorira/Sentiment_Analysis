@@ -2,7 +2,6 @@
 import csv
 import sys
 from itertools import groupby
-
 import ndjson
 
 
@@ -58,6 +57,7 @@ def save_result(delivery_items):
 
 
 _script_name, customer_file, annotation_file = sys.argv
+
 
 annotation_dict = read_annotation_file(annotation_file)
 delivery_items = []

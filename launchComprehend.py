@@ -14,6 +14,7 @@ client = boto3.client('comprehend')
 def checkSentiment(text):
 
     #Sentiment Analysis
+    print('Analyzing... ' + text[0])
     sentiment = client.detect_sentiment(Text = text[1], LanguageCode = 'en') #API call for sentiment analysis
     sentRes = sentiment['Sentiment'] #Positive, Neutral, or Negative
     sentScore = sentiment['SentimentScore'] #Percentage of Positive, Neutral, and Negative
